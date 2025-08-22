@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TEXT</title>
+<title>image</title>
+<!DOCTYPE html>
+<html>
+<head>
+<title>photos</title>
 <style>
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Times New Roman", sans-serif;
 }
-
+/*sidebar*/
 .sidenav {
   height: 100%;
   width: 160px;
@@ -34,53 +38,56 @@ body {
 .main {
   margin-left: 160px; /* Same as the width of the sidenav */
   font-size: 14px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+  
+  /*photo columns*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16px 0 20px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 100%;
+  padding: 0 10px 10px 0px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 </style>
-</head>
+<div class="main"> 
+<h1>IMAGE</h1>
+<p>sentimental</p>
+  <div class="row"> 
+  <div class="column">
+    <img src="P1110934.JPG"style="width:49%">
+    <img src="P1110899.JPG"style="width:49%">
+	<img src="P1120528.JPG"style="width:49%">
+	<img src="P1120531.JPG"style="width:49%">
+	<img src="P1120536.JPG"style="width:49%">
+  </div>
+  <div class="column">
+    <img src="P1110987.JPG"style="width:49%">
+	<img src="P1120542.JPG"style="width:49%">
+	<img src="P1120557.JPG"style="width:49%">
+	<img src="P1120558.JPG"style="width:49%">
+	<img src="P1120563.JPG"style="width:49%">
 
-<body>
-
+  </div>
+</div>
 <div class="sidenav">
   <a href="#about">AUDIO</a>
   <a href="https://kohlfloss.github.io/xavi-/photos">PHOTO</a>
-  <a href="#contact">TEXT</a>
+  <a href="https://kohlfloss.github.io/xavi-">TEXT</a>
 </div>
-
-<div class="main">
-  <h2>MUSIC</h2>
-  <p>Scroll down the page to see the result.</p>
-  <p>15/08/2025 getting shocked by my phone charger </p>
-  <p>16/08/2025 I know I can sing in tune</p>
-</div>
-
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
